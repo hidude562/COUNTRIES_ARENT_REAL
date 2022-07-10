@@ -11,16 +11,16 @@ namespace Country
             _fake = 1;
             _real = 0;
             
-            // User input to ask what country they would like to enter that is not real
-            Console.WriteLine("Enter a country that is not real:");
-            string country = Console.ReadLine().ToUpper();
+            // User input to ask what thing they would like to enter that is not real
+            Console.WriteLine("Enter the thing that is not real:");
+            string thing = Console.ReadLine().ToUpper();
 
-            Console.Title = country + " ISNT REAL";
+            Console.Title = thing + " ISNT REAL";
             Console.ForegroundColor = ConsoleColor.Green;
             Console.CursorVisible = false;
 
             //ask for easy or hard mode
-            Console.WriteLine("Welcome to " + country + " ISNT REAL: The Game.' Would you like to play easy mode (RNG up to 100) or hard mode (RNG up to 1000)? Press 1 and hit enter for easy, press 2 and enter for hard. ");
+            Console.WriteLine("Welcome to '" + thing + " ISNT REAL: The Game.' Would you like to play easy mode (RNG up to 100) or hard mode (RNG up to 1000)? Press 1 and hit enter for easy, press 2 and enter for hard. ");
             string mode = Console.ReadLine();
             
             // set easy mode
@@ -56,7 +56,7 @@ namespace Country
                         int randomGuess1 = rd1.Next(1, 100);
 
                         //set build stuff (name, color)
-                        Console.Title = country + " ISNT REAL";
+                        Console.Title = thing + " ISNT REAL";
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.CursorVisible = false;
 
@@ -70,7 +70,7 @@ namespace Country
                             if (randomGuess1 == correctReal1)
                             {
                                 // tell is winner
-                                Console.WriteLine("YOU WIN: " + country + " IS REAL. ATTEMPTS: " + _attempts + " YOUR NUMBERS WERE: " + randomGuess + " and " + randomGuess1 + " PRESS ENTER TWICE TO START AGAIN.");
+                                Console.WriteLine("YOU WIN: " + thing + " IS REAL. ATTEMPTS: " + _attempts + " YOUR NUMBERS WERE: " + randomGuess + " and " + randomGuess1 + " PRESS ENTER TWICE TO START AGAIN.");
                                 Console.ReadLine();
                                 Console.ReadLine();
                                 real = fake;
@@ -79,8 +79,8 @@ namespace Country
                         }
                         else
                         {
-                            //write country ain't real and attempts
-                            Console.WriteLine("ATTEMPTS: " + _attempts + " RESULT: " + country + " IS NOT REAL! YOUR NUMBERS WERE: " + randomGuess + " and " + randomGuess1);
+                            //write thing ain't real and attempts
+                            Console.WriteLine("ATTEMPTS: " + _attempts + " RESULT: " + thing + " IS NOT REAL! YOUR NUMBERS WERE: " + randomGuess + " and " + randomGuess1);
                         }
 
                     }
@@ -120,7 +120,7 @@ namespace Country
                             int randomGuess1 = rd1.Next(1, 1000);
 
                             //set build stuff (name, color)
-                            Console.Title = country + " ISNT REAL";
+                            Console.Title = thing + " ISNT REAL";
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.CursorVisible = false;
 
@@ -134,7 +134,7 @@ namespace Country
                                 if (randomGuess1 == correctReal1)
                                 {
                                     // tell is winner
-                                    Console.WriteLine("YOU WIN: " + country + " IS REAL. ATTEMPTS: " + _attempts + " YOUR NUMBERS WERE: " + randomGuess + " and " + randomGuess1 + " PRESS ENTER TWICE TO START AGAIN.");
+                                    Console.WriteLine("YOU WIN: " + thing + " IS REAL. ATTEMPTS: " + _attempts + " YOUR NUMBERS WERE: " + randomGuess + " and " + randomGuess1 + " PRESS ENTER TWICE TO START AGAIN.");
                                     Console.ReadLine();
                                     Console.ReadLine();
                                     real = fake;
@@ -144,7 +144,7 @@ namespace Country
                             else
                             {
                                 //write thing ain't real and attempts
-                                Console.WriteLine("ATTEMPTS: " + _attempts + " RESULT: " + country + "IS NOT REAL! YOUR NUMBERS WERE: " + randomGuess + " and " + randomGuess1);
+                                Console.WriteLine("ATTEMPTS: " + _attempts + " RESULT: " + thing + "IS NOT REAL! YOUR NUMBERS WERE: " + randomGuess + " and " + randomGuess1);
                             }
 
                         }
