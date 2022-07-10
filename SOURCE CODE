@@ -20,7 +20,7 @@ namespace Brazil
             Console.CursorVisible = false;
 
             //ask for easy or hard mode
-            Console.WriteLine("Welcome to " + country + ' ISNT REAL: The Game.' Would you like to play easy mode (RNG up to 100) or hard mode (RNG up to 1000)? Press 1 and hit enter for easy, press 2 and enter for hard. ");
+            Console.WriteLine("Welcome to " + country + " ISNT REAL: The Game.' Would you like to play easy mode (RNG up to 100) or hard mode (RNG up to 1000)? Press 1 and hit enter for easy, press 2 and enter for hard. ");
             string mode = Console.ReadLine();
             
             // set easy mode
@@ -153,4 +153,3 @@ namespace Brazil
         }
      }
 }
-
